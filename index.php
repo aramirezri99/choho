@@ -11,9 +11,6 @@ $query = "CALL getAsesors";
 $listasesor = $conexion->obtenerDatos($query);
 $resultsArray = array();
 
-/* var_dump($asesor->obtenerclientes(5));
-var_dump($asesor->obtenerclientes(3)); */
-
 header('Content-Type: application/json');
 foreach ($listasesor as $key) {
            

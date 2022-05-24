@@ -19,10 +19,12 @@ class conexion {
             $this->user=$value['user'];           
             $this->password=$value['password'];           
             $this->database= $value['database'];           
-            $this->port= $value['port'];           
+            $this->port= $value['port']; 
+
         }
 
         $this->conexion= new mysqli($this->server,$this->user,$this->password,$this->database,$this->port);
+        
         if ($this->conexion->connect_error) {
             echo "Algo va mal en la conexion";
             die();

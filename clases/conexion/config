@@ -1,10 +1,9 @@
 {
-
     "conexion":{
 
         "server" : "localhost",
         "user": "root",
-        "password":"",
+        "password":"123",
         "database":"choho_base",
         "port":"3306"
     }
